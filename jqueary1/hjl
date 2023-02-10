@@ -1,0 +1,228 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="menubar11.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+     
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row v-center">
+                    <div class="header-item item-left">
+                        <div class="logo">
+                            <a href="#">My Store</a>
+
+                        </div> 
+
+                    </div>
+                    
+                      
+
+                    
+
+                 
+                    <div class="header-item item-center">
+                        <div class="menu-overlay">
+                        </div>
+                        
+                        <nav class="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back"><i  class="fa fa-angle-left"></i></div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                       
+                        <ul class="=menu-main">
+
+                            <li>
+                                <a href="#">Home</a>
+
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">News <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu mega-menu menu-column-4">
+                                     <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="" alt="new product">
+                                            <h4 class="title">product1</h4>
+
+                                        </a>
+
+                                     </div>
+                                     <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="" alt="new product">
+                                            <h4 class="title">product2</h4>
+
+                                        </a>
+
+                                     </div>
+                                     <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="" alt="new product">
+                                            <h4 class="title">product3</h4>
+
+                                        </a>
+
+                                     </div>
+                                     <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="" alt="new product">
+                                            <h4 class="title">product4</h4>
+
+                                        </a>
+
+                                     </div>
+                                     <div class="list-item text-center">
+                                        <a href="#">
+                                            <img src="" alt="new product">
+                                            <h4 class="title">product5</h4>
+
+                                        </a>
+
+                                     </div>
+                                </div>
+                              
+                            </li>
+                            <li class="menu-item-has-children">
+                                
+                                <a href="#">Shop <i class="fa fa-angle-down"></i></a>
+                                <div class="sub-menu menu mega-menu mega-menu-column-4">
+                                    <div class="list-item">
+                                        <h4 class="title">women fashion</h4>
+                                <ul>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                </ul>
+                            </div>
+                            <div class="list-item">
+                                <h4  class="title">Mens</h4>
+                                <ul>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                </ul>
+                            </div>
+                          
+                            <div  class="list-item">
+                                <h4  class="title">Kids</h4>
+                                <ul>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                </ul>
+                            </div>
+                            <div  class="list-item">
+                                <h4  class="title">Home </h4>
+                                <ul>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="list-item">
+                                <h4  class="title" >furniture </h4>
+                                <ul>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                    <li><a href="#">product list</a></li>
+                                </ul>
+                                <div class="list-item">
+                                    <img src="" alt="shop">
+
+                                </div>
+                            </div>
+                              
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Standard Layout</a></li>
+                                        <li><a href="#">Grid Layout</a></li>
+                                        <li><a href="#">single Post Layout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="menu-item-has-children" >
+                                <a href="#">Page <i class="fas fa-angle-down"></i></a>
+                                <div class="sub-menu single-column-menu">
+                                    <ul>
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Faq</a></li>
+                                        <li><a href="#">404 Page</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+           
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                       
+                    </div>
+                    <div class="header-item item-right">
+                        <a href="#"><i class="fas fa-search"></i></a>
+ 				        <a href="#"><i class="far fa-heart"></i></a>
+ 				        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+                         <div class="mobile-menu-trigger">
+                            <span></span>
+                        </div>
+                              
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+     
+ <!-- banner start -->
+ <section class="banner-section">
+ 	
+</section>
+<!-- banner end -->
+
+<script src="scripttty.js"></script>
+    </body>
+</html>

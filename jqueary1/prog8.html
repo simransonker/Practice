@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+var turn=1;// 1=x,0=o
+var gameStatus=true;
+var gameState=[2,2,2,2,2,2,2,2,2,]; //2 for black
+var winState=[ [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0.4,8],[2,4,6]]
+   $(document).ready(function(){
+    $("td").click(function(){
+        if(gameStatus==true)
+        {
+            if(turn==1)
+            {
+                $(this).html("<img src='x.jpg'/>");
+                turn=0;
+            }
+            else if(turn==0)
+            {
+                $(this).html("<img src='o.png'/>");
+                turn=1;
+            }
+        }
+    })
+   })
+
+        </script>
+        <style>
+            table{
+                height: 600px;
+                width: 600px;
+                background-color: red;
+
+            }
+            tr{
+                height: 200px;
+                width: 600px;
+
+            }
+            td{
+                height: 200px;
+                width: 200px;
+                background-color: yellowgreen;
+
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center" cellspacing="5">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+    
+            </tr>
+        </tr>
+    </table>
+    </body>
+</html>

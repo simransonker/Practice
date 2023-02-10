@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                var a=$("#t1").val();
+                $("#t2").val(a);
+                $("#p1").html(a);
+                var b=$("#h1").html()
+                $("#h2").text(b)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <input type="text" id="t1"/>
+    <button id="btn1">Save</button>
+    <input type="text" id="t2"/>
+    <br>
+    <p id="p1"></p>
+    <h1 id="h1"><i>gfhjxkl;s</i></h1>
+    <h2 id="h2"></h2>
+
+</body>
+
+</html> 

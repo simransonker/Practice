@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#p1").css("color","blue");
+                $("#p2").css("color","red");
+
+                $(".para").css("color","yellow");
+                $("p").css("background-color","lime");
+                $("#list li").eq(2).css("color","red");
+                $("#list li:odd").css("color","pink");
+                $("#list li:even").css("color","blue");
+               
+
+                $("#list").parent().css("background-color","yellow")
+
+
+            })
+
+        </script>
+    </head>
+    <body>
+<div id="box">
+    <ul id="list">
+        <li>A</li>
+        <li>b</li>
+
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+
+    </ul>
+</div>
+<p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Ut voluptatum numquam tenetur assumenda animi, officia 
+     quia nostrum reiciendis ipsa! Ea dignissimos 
+    minus suscipit molestiae fugiat atque expedita quam libero cum?</p>
+  
+
+    <p id="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ut voluptatum numquam tenetur assumenda animi, officia 
+        quia nostrum reiciendis ipsa! Ea dignissimos 
+       minus suscipit molestiae fugiat atque expedita quam libero cum?</p>
+
+       <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ut voluptatum numquam tenetur assumenda animi, officia 
+        quia nostrum reiciendis ipsa! Ea dignissimos 
+       minus suscipit molestiae fugiat atque expedita quam libero cum?</p>
+
+
+       <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Ut voluptatum numquam tenetur assumenda animi, officia 
+        quia nostrum reiciendis ipsa! Ea dignissimos 
+       minus suscipit molestiae fugiat atque expedita quam libero cum?</p>
+    </body>
+</html>

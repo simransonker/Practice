@@ -1,0 +1,25 @@
+<html>
+    <head>
+          <script src="jquery-3.6.1.min.js"></script>
+          <script>
+            $(document).ready(function(){
+                $("#chk1").click(function(){
+
+                    var a=$("#chk1").prop("checked");
+                    if(a==true){
+                        $("#t1").attr("type","text");
+                    }
+                    else{
+                        $("#t1"),attr("type","password");
+                    }
+                })
+            })
+          </script>
+    </head>
+    <body>
+        <input type="password" id="t1"/>
+        <input type="checkbox" id="chk1"/>
+
+
+    </body>
+</html>

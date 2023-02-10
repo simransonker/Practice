@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-decoration: none;
+
+            }
+            body{
+                font-family: sans-serif;
+            }
+            nav{
+                height: 50px;
+                background: powderblue;
+                box-shadow: 0 30px 15px rgba(0,0,0,.1);
+            }
+            nav ul{
+                float: right;
+                margin-right: 30px;
+   
+            }
+            nav ul li{
+                display: inline-block;
+            }
+            nav ul li a{
+                color: white;                     
+                display: block;
+                padding: 0 15px;
+                line-height: 50px;
+                font-size: 20px;
+                background: greenyellow;
+            }
+            nav ul li a:hover,
+            nav ul li a.action{
+                color:greenyellow   
+            }
+            nav ul ul{
+                position: absolute;
+                top: 60px;
+                border-top: 1px solid yellow;
+                opacity: 0;
+                visibility: hidden;
+            }
+            nav ul li:hover > ul{
+                top: 60px;
+                opacity: 1;
+                visibility: visible;
+            }
+            nav ul ul li{
+                width: 100px;
+                display: list-item;
+                position: relative;
+                border: 1px solid springgreen;
+                border-top: none;
+
+            }
+            nav ul ul li a{
+                line-height: 50px;
+
+            }
+
+
+
+        </style>
+    </head>
+      <body>
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Home</a>
+                  <ul>
+                    <li><a href="#">d1</a></li>
+                    <li><a href="#">d1</a></li>
+                    <li><a href="#">d1</a></li>
+                    <li><a href="#">d1</a></li>
+
+                  </ul>
+                
+                </li>
+                <li><a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">d1</a></li>
+                        <li><a href="#">d1</a></li>
+                        <li><a href="#">d1</a></li>
+                        <li><a href="#">d1</a></li>
+    
+                      </ul>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+
+            </ul>
+        </nav>
+      </body>
+</html>

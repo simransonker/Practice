@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+            }
+            nav
+            {
+                 background: #242526;
+                 position: fixed;
+                 width: 100%;
+                 z-index: 999;
+                 height: 65px;
+                 line-height: 65px;
+ 
+                }
+            nav .wrapper
+            {
+                max-width: 1250px;
+                padding: 0 30px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .wrapper .logo a
+            {
+                color: #fff;
+                text-decoration: none;
+                font-size: 27px;
+                font-weight: 600;
+
+            }
+            .wrapper .nav-links
+            {
+                display: inline-flex;
+            }
+            .nav-link li
+            {
+                list-style: none;
+            }
+            .nav-links li a{
+                color: #fff;
+                text-decoration: none;
+                padding: 9px 15px;
+            }
+            .nav-links li a:hover
+                {
+                    background: #3A3B3C;
+                }
+                .nav-links .drop-menu
+                {
+                    background: #242526;
+                    width: 180px;
+                    top: 65px;
+                    line-height: 45px;
+                }
+                .nav-links .drop-menu
+                {
+                    background: #242526;
+                    width: 170px;/*yaha se slider ki width increase or decrise hogi*/
+                    top: 65px;
+                    line-height: 45px;
+                    position: absolute;
+                    opacity: 1;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                }
+                .nav-links li:hover .drop-menu
+                {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .drop-menu li a
+                {
+                    width: 100%;
+                    display: block;
+                    padding: 0 0 0 15px;
+                    font-weight: 400;
+                    border-radius: 0px;
+                }
+                .mega-box
+                {
+                    position: absolute;
+                    top: 80px;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                }
+                .mega-box .content
+                {
+                    background:gold;
+                    padding: 9px 30px;
+                    display: flex;
+                    width: 80%;
+                    justify-content: space-between;
+                }
+                .content .row
+                {
+                    width: calc(25% - 30px);
+                    line-height: 45px;
+                }
+                .content .row img{
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+        </style>
+
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><a href="#">coding</a></div>
+<ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#"> dropdown</a>
+    <ul class="drop-menu">
+        <li><a href="#">dropdown1</a></li>
+        <li><a href="#">dropdown2</a></li>
+        <li><a href="#">dropdown2</a></li>
+        <li><a href="#">dropdown2</a></li>
+        <li><a href="#">dropdown2</a></li>
+        <li><a href="#">dropdown2</a></li>
+        <li><a href="#">dropdown2</a></li>
+
+    </ul></li>
+    <li><a href="#">Mega menu</a>
+        <div class="mega-box">
+            <div class="content">
+                <div class="row">
+                    <img src="download.jpg" alt="">
+                </div>
+                <div class="row">
+                    <header>Design services</header>
+                    <ul class="mega-links">
+                        <li><a href="#">dropdown1</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="row">
+                    <header>Design services</header>
+                    <ul class="mega-links">
+                        <li><a href="#">dropdown1</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="row">
+                    <header>Design services</header>
+                    <ul class="mega-links">
+                        <li><a href="#">dropdown1</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="row">
+                    <header>Design services</header>
+                    <ul class="mega-links">
+                        <li><a href="#">dropdown1</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+                        <li><a href="#">dropdown2</a></li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        
+    </li>
+     
+    <li><a href="#">feedback</a></li>
+
+
+
+</ul>
+            </div>
+        </nav>
+    </body>
+</html>

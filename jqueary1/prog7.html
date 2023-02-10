@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO LIST</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script>
+            $(doccument).ready(function(){
+                var sr=1;
+                $("#taskform").submit(function(e){
+                    e.preventDefault();
+                    var a=$("#taskdesc").var();
+                    var row="<tr><td>"+sr+"</td><td>"+a+"</td><td> <button class='btn btn-success btn-sm' onclick='taskdone(this)'>Done</button></td></tr>";
+                    $("taskslist").append(row);
+                    sr++;
+                    document.getElementById("taskform").reset();
+                })
+
+            })
+            var sr=1;
+          function taskdone(btn)
+          {
+            var desc=$(btn).parent().parent().find("td").eq(1).html();
+
+            var row="<tr><td>"+sr+"</td><td>"+desc+"</td><td><button class='btn btn-danger btn-sm' onclick='deletetask(this)'>Delete</button><td></tr>"
+            $("#taskslist1").append(row);
+            sr++;
+
+            $(btn).parent().parent().remove();
+          }
+          function deletetask(btn)
+          {
+            $(btn).parent().parent().remove();
+          }
+        </script>
+      
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+
+                    <div class="card w-100">
+                       <div class="card-header bg-primary text-white">
+                        <h4 class="card-tittle">Add new task</h4>
+                       </div>
+                       <div class="card-body">
+                            <form id="taskform">
+                                <div class="form-group">
+                                    <label>Enter task description </label>
+                                      <textarea class="form-control" id="taskdesc" placeholder="Enter Description here" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-success"> Save</button>
+
+                                </div>
+
+                            </form>
+
+                       </div>
+                    </div>
+
+
+
+                    <div class="card w-100 mt-3">
+                        <div class="card-header">
+                         <h4 class="card-tittle">Tasks list</h4>
+                        </div>
+                        <div class="card-body">
+                            <h4>Incomplite Task</h4>
+                            <table id="tasklist" class="table table-bordered table-hover">
+                                <tr>
+                                    <th>Sr</th>
+                                    <th>Task Description</th>
+                                    <th>Action</th>
+                                </tr>
+
+                            </table>
+
+                            <h4>Complete task</h4>
+                                 <table id="tasklist1" class="table table-bordered table-hover">
+                                    <tr>
+                                        <th>Sr</th>
+                                        <th>Task Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                 </table>          
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+                
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

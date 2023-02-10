@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            nav{
+                padding: 0 50px;
+                width: 100%;
+            }
+
+            .flex{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .navbar-one{
+                background-color: lightskyblue;
+                color: white;
+                height: 40px;
+
+            }
+            .left > div + div{
+                margin-left: 40px;
+            }
+            .right > div {
+                margin-left:40px;
+
+            }
+            .left >div:hover,
+            .right > div:hover
+            {
+                color:black;
+                transition: all 0.5s;
+
+            }
+            .navbar-second
+            {
+                background-color: white;
+                height: 70px;
+                position: sticky;
+                top: 0;
+            }
+            .logo
+            {
+                text-transform: capitalize;
+                font-size: 24px;
+                cursor: pointer;
+                color: lightskyblue;
+            }
+            .logo h1 span{
+                color: black;
+                text-transform: capitalize;
+            }
+            .logo p{
+                color: black;
+
+            }
+            li{
+                list-style: none;
+
+            }
+            a{
+              text-transform: capitalize;
+                text-decoration: none;
+                font-size: 16px;
+                margin-left: 30px;
+                color: lightskyblue;
+            }
+            li a:hover
+            {
+                color:black;
+                transition: all 0.5s;
+            }
+            .buttonss button
+            {
+                height: 35px;
+                width: 150px;
+                font-weight: bold;
+                color: white;
+                background: darkslategray;
+                border: 1px solid darkslategrey;
+                outline: none;
+                cursor: pointer;
+            }
+            .buttonss button:hover{
+                color:black;
+                transition: all 0.5s;
+            }
+            section
+            {
+                width: 100%;
+                height: 100vh;
+                background: url(dsd.webp) no-repeat center;
+               
+                margin: auto;
+            }
+           
+              .content
+            {
+              position: absolute;
+              bottom: 200px;
+              right: 80px;
+                color: azure;
+                font-size: 25px;
+                
+            }
+            p
+            {
+                font-size: 10px;
+            }
+            .buttons{
+                position: absolute;
+              bottom: 150px;
+              right: 80px;
+              
+
+            }
+            .buttons button
+            {
+                height: 35px;
+                width: 150px;
+                font-weight: bold;
+                color: white;
+                background: lightblue;
+                border: 1px solid lightblue;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .buttons button:hover{
+                color:black;
+                transition: all 0.5s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar-one flex">
+            <div class="left flex">
+                <div class="email">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <span>Discover St, New York,Nk 100012, USA</span>
+
+                </div>
+                <div class="time">
+                    <i class="fa-solid fa-timer"></i>
+                    <span>Mon-Sat 9.00-18.00</span>
+
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+251-235-3256</span>
+
+                </div>
+
+            </div>
+            <div class="right flex">
+                <div class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                   
+                </div>
+                <div class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  
+
+                </div>
+                <div class="wifi">
+                    <i class="fa-solid fa-wifi"></i>
+                 
+
+                </div>
+                <div class="google+">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                   
+
+                </div>
+                <div class="v">
+                    <i class="fa-solid fa-v"></i>
+                   
+
+                </div>
+
+            </div>
+
+        </nav>
+        <nav class="navbar-second flex">
+            <div class="logo">
+                <h1>Elder <span>Care</span></h1>
+                <p>Best Care For Elder Ever</p>
+            </div>
+            <ul class="flex">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="buttonss">
+                <button>APPOINTMENT</button>
+
+            </div>
+        </nav>
+        <section>
+               <div class="content">
+                <h1>BEST HOME CARE <br/>WITH LOVE </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.expedita </p>
+               </div> 
+               <div class="buttons">
+                <button>PURCHASE NOW</button>
+
+               </div>      
+        </section>
+    </body>
+</html>

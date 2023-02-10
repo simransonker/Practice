@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                // var a=$("#box").width();
+                // var a=$("#box").innerWidth();
+                // var a=$("#box").outerWidth();
+
+                //var a=$("#box").height();
+                // var a=$("#box").innerHeight();
+                 var a=$("#box").outerHeight();
+
+
+                $("#p1").html(a);
+
+            })
+
+        </script>
+
+
+<style>
+    #box
+    {
+        width: 300px;
+        height: 300px;
+        border: 5px solid red;
+    }
+</style>
+    </head>
+    <body>
+        <div id="box">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sint perferendis quae dolorum 
+            
+        </div>
+
+
+        <p id="p1"></p>
+    </body>
+</html>

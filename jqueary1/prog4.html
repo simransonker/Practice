@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #box
+            {
+                width: 400px;
+                height: 400px;
+                background-color: olive;
+            }
+        </style>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#btn1").ready(function()
+                {
+                    $("#box").show();
+                });
+                $("#btn2").click(function()
+                {
+                     $("#box").hide();
+                })
+                $("#btn3").click(function()
+                {
+                     $("#box").fadeIn(3000);
+                })
+                $("#btn4").click(function()
+                {
+                     $("#box").fadeOut(3000);
+                })
+                $("#btn5").click(function()
+                {
+                     $("#box").fadeToggle();
+                })
+                $("#btn6").click(function()
+                {
+                     $("#box").slideUp();
+                })
+                $("#btn7").click(function()
+                {
+                     $("#box").slideDown();
+                })
+                $("#btn8").click(function()
+                {
+                     $("#box").slideToggle(5000);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">show</button>
+        <button id="btn2">Hide</button>
+        <br/>
+        <button id="btn3">Fade In</button>
+        <button id="btn4">fadeOut</button>
+        <button id="btn5">fadeToggle</button>
+        <br/>
+        <button id="btn6">slideUp</button>
+        <button id="btn7">slideDown</button>
+        <button id="btn8">slideToggle</button>
+
+        <div id="box"></div>
+
+    </body>
+</html>

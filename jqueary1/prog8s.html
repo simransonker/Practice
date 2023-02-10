@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        var turn=1;   // 1=x, 0=o
+        var gameStatus=true;
+        var gameState=[2,2,2,2,2,2,2,2,2]; // 2 for blank
+        var winState=[ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6] ];
+
+        $(document).ready(function () {
+
+            $("td").click(function(){
+                var index=$(this).attr("data-index");
+
+                if(gameStatus==true && gameState[index]==2)
+                {
+                    if(turn==1)
+                    {
+                        $(this).html("<img src='x.jpg' />");
+                        turn=0;
+                        gameState[index]=1;
+                        $("#gamehint").html("0 Turn");
+
+                    }
+                    else if(turn==0)
+                    {
+                        $(this).html("<img src='o.png' />");
+                        turn=1;
+                        gameState[indx]=0;
+                        $("#gamehint").html("X Turn");
+                    }
+                }
+
+                //check game over
+                var gameover=true;
+                for(var i=0; i<gameState.length; i++)
+                {
+                    if(gameState[i]==2)
+                    {
+                        gameover=false;
+                      
+                    }
+
+                }
+                if (gameover==true)
+                {
+                    $("#gamehint").html("Game Over, No Player WON");
+                    gameStatus=false;
+                    $("#restartbtn").show();
+                }
+
+                // check win status
+                var winner=checkwin();
+                if(winner==1)
+                {
+                    $("#gamehint").html("X Player WON");
+                    gameStatus=false;
+                    $("#restartbtn").show();
+                }
+                    else if(winner==0)
+                    {
+                        $("#gamehint").html("0 Player WON");
+                        gameStatus=false;
+                        $("#restartbtn").show();
+                    }
+               
+                
+
+            })
+            $("#restartbtn").click(function(){
+                window.location.reload();
+
+            })
+            
+        })
+        function checkwin()
+        {
+            var status=false;
+            for (var i=0; i<winStatus.length; i++)
+            {
+                if( (gameState[winStatus[i][0]]==gameState[winStatus[i][1]]&&gameState[winState[i][1]]==gameState[winState[i][2]]) && gameState[winState[i][0]] !=2)
+                {
+                    status=true;
+                    break;
+                }
+            }
+            var winplayer=2;
+            if(status==true)
+            {
+                if(ture==0)
+                {
+                    winplayer=1;
+
+                }
+                else{
+                    winplayer=0;
+
+                }
+            }
+
+
+            return winplayer;
+        }
+    </script>
+
+<style>
+    table {
+        height: 600px;
+        width: 600px;
+        background-color: red;
+    }
+    tr {
+        height: 200px;
+        width: 600px;
+    }
+    td {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+    }
+    img  {
+        width: 200px;
+        height: 200px;
+    }
+    #gamehint{
+        text-align:center;
+    }
+    p
+    {
+        text-align:center;
+
+    }
+    #restartbtn
+
+    {
+        display:none;
+    }
+</style>
+
+</head>
+<body>
+       <h1 id="gamehint">X Turn</h1>
+    <table align="center" cellspacing="5">
+
+        <tr>
+            <td data-index="0"> </td>            
+            <td data-index="1"> </td>            
+            <td  data-index="2"> </td>            
+        </tr>
+   
+        <tr>
+            <td data-index="3"> </td>            
+            <td data-index="4"> </td>            
+            <td data-index="5"> </td>            
+        </tr>
+
+        <tr>
+            <td data-index="6"> </td>            
+            <td data-index="7"> </td>            
+            <td data-index="8"> </td>            
+        </tr>
+
+    </table>
+    <p><button id="restartbtn">Restart</button></p>
+    
+</body>
+</html>

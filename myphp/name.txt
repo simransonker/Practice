@@ -1,0 +1,17 @@
+name
+mobile
+gender
+email
+
+
+show page
+
+2 table 
+
+current data
+
+
+old data
+
+
+insertinto select
